@@ -56,11 +56,11 @@ export default function SignUp() {
         <input type="text" placeholder='Username' className='border p-3 rounded-lg' id='username'onChange={handleChange} />
         <input type="email" placeholder='Email' className='border p-3 rounded-lg' id='email'onChange={handleChange} />
         <input type="password" placeholder='Password' className='border p-3 rounded-lg' id='password'onChange={handleChange} />
-        <button disabled={loading} className='p-3 bg-slate-700 rounded-lg text-white hover:opacity-90 disabled:opacity-70'>{loading? 'Loading...': 'Sign Up'}</button>
+        <button disabled={loading} className='p-3 bg-slate-700 rounded-lg text-white hover:opacity-90 disabled:opacity-70 uppercase'>{loading? 'Loading...': 'Sign Up'}</button>
       </form>
       <div className="flex gap-2 mt-5 font-semibold">
         <p>Have an account?</p>
-        <Link to='/sign-in'><span className='text-blue-700'>Sign in</span></Link>
+        <Link to='/sign-in'><span className='text-blue-700 hover:underline'>Sign in</span></Link>
       </div>
       {error && <p className='text-red-500 mt-5'>{error}</p>}
     </div>
