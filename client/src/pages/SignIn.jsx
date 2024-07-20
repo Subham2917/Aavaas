@@ -23,11 +23,11 @@ export default function SignIn() {
 
   
 
-  const  handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       dispatch(signInStart())
-    const res = await fetch('/api/auth/signin', {
+      const res = await fetch('/api/auth/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,7 +45,7 @@ export default function SignIn() {
     
 
     } catch (error) {
-      dispatch(signInFailure(data.message));
+      dispatch(signInFailure(error.message));
     }
     // alert("Account successfully created! You can now sign in.");
   }
