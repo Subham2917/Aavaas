@@ -63,9 +63,9 @@ export default function Home() {
               >
       
                 <div className='flex flex-col gap-6 p-28 px-3 max-w-6xl mx-auto'>
-                  <h1 className='text-rose-700 font-bold text-3xl lg:text-6xl'>Find your next<span className='text-rose-500'>perfect</span><br />place with ease</h1>
+                  <h1 className='text-yellow-500 font-bold text-3xl lg:text-6xl'>Discover the place <span className='text-rose-500'>where your</span><br />dreams take shape.</h1>
                   <div className='text-slate-300 text-xs sm:text-lg font-semibold'>Aavaash Estate is the best place to find your next perfect place to live.<br />We have a wide range of properties for you to choose from.</div>
-                  <Link to={'/search'} className='text-xs sm:text-lg text-blue-800 font-bold hover:underline'>Let's get started...</Link>
+                  <Link to={'/search'} className='text-xs sm:text-lg text-yellow-300 font-bold hover:underline'>Let's get started...</Link>
                 </div>
               </div>
       
