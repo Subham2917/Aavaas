@@ -100,6 +100,6 @@ export const getListings = async (req, res, next) => {
 
 
     } catch (error) {
-       nect(error) 
+       next(error) 
     }
 }
